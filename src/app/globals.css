@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'YuRound';
+  src: url('/fonts/YuRound.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+/* 在 src/app/globals.css 中加入 */
+.text-outline {
+  color: #f97316; /* Tailwind orange-400 */
+  -webkit-text-stroke: 1px #d97706; /* 橘色邊線 */
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  
+}
