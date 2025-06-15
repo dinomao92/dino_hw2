@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 const notoSansTC = Noto_Sans_TC({
-  variable: "--font-noto-tc",
-  weight: ["400", "700"],
-  subsets: ["traditional-chinese"], // 改這裡比較準確
-  display: "swap",
+  subsets: ['latin'], // ✅ 改成正確 subset
+  weight: ['400', '700'],
+  variable: '--font-noto-tc',
 });
+
 
 export const metadata = {
   title: "Create Next App",
